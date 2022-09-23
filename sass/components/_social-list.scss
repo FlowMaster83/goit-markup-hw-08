@@ -1,0 +1,31 @@
+.team__social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.social-list_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: var(--another-grey);
+    transition: background-color var(--transition-duration-function);
+
+&:hover,
+&:focus {
+    background-color: var(--blue);
+    fill: var(--white);
+    }
+}
+
+.social-list_icon {
+    width: 20px;
+    height: 20px;
+    fill: inherit;
+    transition: fill var(--transition-duration-function);
+}

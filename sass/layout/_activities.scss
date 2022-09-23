@@ -1,0 +1,20 @@
+.activites {
+    padding-top: 0;
+}
+
+.activities-list {
+    display: flex;
+}
+
+.activities-points {
+    flex-basis: calc((100% - 60px) / 3);
+
+
+&:not(:last-child) {
+    margin-right: 30px;
+    }
+}
+
+.ov-activ-parent {
+    position: relative;
+}
