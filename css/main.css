@@ -55,6 +55,10 @@ ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -99,6 +103,49 @@ ol {
 }
 .modal-button:hover, .modal-button:focus {
   background-color: var(--blue-for-modal-button);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.close-mobile-menu-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu__container {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 48px;
+}
+
+.close-mobile-menu-btn__icon {
+  width: 19px;
+  height: 19px;
+}
+
+.mobile-menu__social-link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 .benefits-description {
@@ -334,6 +381,49 @@ ol {
   border-radius: 4px;
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.close-mobile-menu-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu__container {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 48px;
+}
+
+.close-mobile-menu-btn__icon {
+  width: 19px;
+  height: 19px;
+}
+
+.mobile-menu__social-link:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
 .header__logo-web {
   display: flex;
   padding-top: 24px;
@@ -382,12 +472,30 @@ span {
   text-decoration: none;
 }
 
+.header__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header__navigation_list {
   display: none;
 }
 
 .contact-link {
   display: none;
+}
+
+.open-mobile-menu-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  line-height: 0;
+}
+
+.open-mobile-menu-btn__icon {
+  width: 40px;
+  height: 40px;
 }
 
 .hero {
