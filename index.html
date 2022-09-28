@@ -37,7 +37,7 @@
         </nav>
 
         <!-- BURGER -->
-        <button class="open-mobile-menu-btn" data-menu-open>
+        <button class="open-mobile-menu-btn js-open-menu">
           <svg class="open-mobile-menu-btn__icon">
             <use href="./img/sprite.svg#icon-burger"></use>
           </svg>
@@ -63,28 +63,33 @@
         </ul>
       </div>
     </header>
+    <!-- HEADER -->
+
     <!-- MOBILE MENU -->
-    <div class="mobile-menu" data-menu>
+    <div class="mobile-menu js-menu-container">
       <div class="container mobile-menu__container">
         <!-- close icon -->
-        <button class="close-mobile-menu-btn" data-menu-close>
+        <button class="close-mobile-menu-btn js-close-menu">
           <svg class="close-mobile-menu-btn__icon">
             <use href="./img/sprite.svg#mob-menu-icon-close"></use>
           </svg>
         </button>
         <!-- close icon -->
+        <!-- mobile menu navigation -->
         <ul>
-          <li>
-            <a href="">Студія</a>
+          <li class="navigation__list_item">
+            <a class="navigation__list_link" href="#">Студія</a>
           </li>
-          <li>
-            <a href="">Портфоліо</a>
+          <li class="navigation__list_item">
+            <a class="navigation__list_link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li>
-            <a href="">Контакти</a>
+          <li class="navigation__list_item">
+            <a class="navigation__list_link" href="#">Контакти</a>
           </li>
         </ul>
+        <!-- mobile menu navigation -->
 
+        <!-- mobile menu contacts -->
         <ul>
           <li>
             <a href="tel:+380961111111">+38 096 111 11 11</a>
@@ -93,7 +98,9 @@
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
         </ul>
+        <!-- mobile menu contacts -->
 
+        <!-- mobile menu social -->
         <ul class="mobile-menu__social-links">
           <li>
             <a href="">Instagram</a>
@@ -108,11 +115,10 @@
             <a href="">LinkedIn</a>
           </li>
         </ul>
+        <!-- mobile menu social -->
       </div>
     </div>
     <!-- MOBILE MENU -->
-
-    <!-- HEADER -->
 
     <main>
       <!-- HERO -->
@@ -633,8 +639,12 @@
         </form>
       </div>
     </div> -->
-    <!-- MODAL WINDOW -->
-    <script src="./js/menu.js"></script>
+    <!-- JS MOBILE MENU -->
+    <script src="./js/mobile-menu.js"></script>
+    <!-- JS MOBILE MENU -->
+
+    <!-- JS MODAL WINDOW -->
     <!-- <script src="./js/modal.js"></script> -->
+    <!-- JS MODAL WINDOW -->
   </body>
 </html>

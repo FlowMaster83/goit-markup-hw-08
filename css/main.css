@@ -109,9 +109,21 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: var(--transition-duration-function);
+  opacity: 1;
+  visibility: hidden;
+  pointer-events: auto;
+}
+
+.mobile-menu.is-open {
+  opacity: 0;
+  visibility: visible;
+  pointer-events: none;
+  transform: translateX(0);
 }
 
 .close-mobile-menu-btn {
@@ -126,12 +138,6 @@ a {
   height: 40px;
 }
 
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
 .mobile-menu__container {
   position: relative;
   padding-left: 40px;
@@ -141,11 +147,6 @@ a {
 .close-mobile-menu-btn__icon {
   width: 19px;
   height: 19px;
-}
-
-.mobile-menu__social-link:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
 }
 
 .benefits-description {
@@ -381,49 +382,6 @@ a {
   border-radius: 4px;
 }
 
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-}
-
-.close-mobile-menu-btn {
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  line-height: 0;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 40px;
-  height: 40px;
-}
-
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.mobile-menu__container {
-  position: relative;
-  padding-left: 40px;
-  padding-top: 48px;
-}
-
-.close-mobile-menu-btn__icon {
-  width: 19px;
-  height: 19px;
-}
-
-.mobile-menu__social-link:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-}
-
 .header__logo-web {
   display: flex;
   padding-top: 24px;
@@ -498,6 +456,24 @@ span {
   height: 40px;
 }
 
+@media screen and (max-width: 480px) {
+  .header {
+    padding-top: 16px;
+    padding-left: 15px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .header {
+    padding-top: 26px;
+    padding-left: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+}
 .hero {
   text-align: center;
   max-width: 1660px;
