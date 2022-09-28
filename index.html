@@ -122,12 +122,12 @@
 
     <main>
       <!-- HERO -->
-      <!-- <section class="hero hero-image">
+      <section class="hero hero-image">
         <div class="container">
           <h1 class="solutions-main-caption">Ефективні рішення для вашого бізнесу</h1>
           <button class="modal-button" type="submit" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
       <!-- HERO -->
 
       <!-- BENEFITS -->
@@ -222,12 +222,63 @@
       <!-- ACTIVITIES -->
 
       <!-- TEAM -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__main-caption">Наша команда</h2>
           <ul class="team__list">
             <li class="team__list_members">
-              <img src="./img/Demyanenko-1.jpg" alt="Demyanenko" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team_photo/webp/desktop/product_designer_desktop.webp    1x,
+                    ./img/team_photo/webp/desktop/product_designer_desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/desktop/product_designer_desktop.png    1x,
+                    ./img/team_photo/png/desktop/product_designer_desktop@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team_photo/webp/tab/product_designer_tab.webp    1x,
+                    ./img/team_photo/webp/tab/product_designer_tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/tab/product_designer_tab.png    1x,
+                    ./img/team_photo/png/tab/product_designer_tab@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team_photo/webp/mob/product_designer_mob.webp    1x,
+                    ./img/team_photo/webp/mob/product_designer_mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/mob/product_designer_mob.png    1x,
+                    ./img/team_photo/png/mob/product_designer@2x_mob.png 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./img/Demyanenko-1.jpg" alt="Demyanenko" />
+              </picture>
+
               <div class="team__layout">
                 <h3 class="team__item">Ігор Дем'яненко</h3>
                 <p class="team__item_position">Product Designer</p>
@@ -395,7 +446,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- TEAM -->
 
       <!-- CUSTOMERS -->
