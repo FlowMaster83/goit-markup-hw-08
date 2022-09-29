@@ -36,14 +36,6 @@
           </ul>
         </nav>
 
-        <!-- BURGER -->
-        <button class="open-mobile-menu-btn js-open-menu">
-          <svg class="open-mobile-menu-btn__icon">
-            <use href="./img/sprite.svg#icon-burger"></use>
-          </svg>
-        </button>
-        <!-- BURGER -->
-
         <ul class="header__contactlist">
           <li class="header__contactlist_item">
             <a href="mailto:info@devstudio.com" class="contact-link">
@@ -62,6 +54,15 @@
           </li>
         </ul>
       </div>
+
+      <!-- BURGER -->
+      <button class="open-mobile-menu-btn js-open-menu">
+        <svg class="open-mobile-menu-btn__icon">
+          <use href="./img/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+      <!-- BURGER -->
+
     </header>
     <!-- HEADER -->
 
@@ -88,7 +89,6 @@
           </li>
         </ul>
         <!-- mobile menu navigation -->
-
         <!-- mobile menu contacts -->
         <ul>
           <li>
@@ -99,7 +99,6 @@
           </li>
         </ul>
         <!-- mobile menu contacts -->
-
         <!-- mobile menu social -->
         <ul class="mobile-menu__social-links">
           <li>
@@ -131,7 +130,7 @@
       <!-- HERO -->
 
       <!-- BENEFITS -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="benefits-caption">Наші переваги</h2>
           <div class="ben-vect">
@@ -190,11 +189,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- BENEFITS -->
 
       <!-- ACTIVITIES -->
-      <!-- <section class="activites section">
+      <section class="activities section">
         <div class="container">
           <h2 class="activities-caption">Чим ми займаємось</h2>
           <ul class="activities-list">
@@ -218,7 +217,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- ACTIVITIES -->
 
       <!-- TEAM -->
@@ -271,7 +270,7 @@
                 <source
                   srcset="
                     ./img/team_photo/png/mob/product_designer_mob.png    1x,
-                    ./img/team_photo/png/mob/product_designer@2x_mob.png 2x
+                    ./img/team_photo/png/mob/product_designer_mob@2x.png 2x
                   "
                   media="(min-width: 480px)"
                 />
@@ -320,7 +319,58 @@
             </li>
 
             <li class="team__list_members">
-              <img src="./img/Repina-2.jpg" alt="Repina" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team_photo/webp/desktop/frontend_developer_desktop.webp    1x,
+                    ./img/team_photo/webp/desktop/frontend_developer_desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/desktop/frontend_developer_desktop.png    1x,
+                    ./img/team_photo/png/desktop/frontend_developer_desktop@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team_photo/webp/tab/frontend_developer_tab.webp    1x,
+                    ./img/team_photo/webp/tab/frontend_developer_tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/tab/frontend developer_tab.png    1x,
+                    ./img/team_photo/png/tab/frontend developer_tab@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team_photo/webp/mob/frontend_developer_mob.webp    1x,
+                    ./img/team_photo/webp/mob/frontend_developer_mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/mob/frontend_developer_mob.png    1x,
+                    ./img/team_photo/png/mob/frontend_developer_mob@2x.png 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./img/Repina-2.jpg" alt="Repina" />
+              </picture>
+
               <div class="team__layout">
                 <h3 class="team__item">Ольга Рєпіна</h3>
                 <p class="team__item_position">Frontend Developer</p>
@@ -362,7 +412,58 @@
             </li>
 
             <li class="team__list_members">
-              <img src="./img/Tarasov-3.jpg" alt="Tarasov" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team_photo/webp/desktop/marketing_desktop.webp    1x,
+                    ./img/team_photo/webp/desktop/marketing_desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/desktop/marketing_desktop.png    1x,
+                    ./img/team_photo/png/desktop/marketing_desktop@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team_photo/webp/tab/marketing_tab.webp    1x,
+                    ./img/team_photo/webp/tab/marketing_tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/tab/marketing_tab.png    1x,
+                    ./img/team_photo/png/tab/marketing_tab@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team_photo/webp/mob/marketing_mob.webp    1x,
+                    ./img/team_photo/webp/mob/marketing_mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/mob/marketing_mob.png    1x,
+                    ./img/team_photo/png/mob/marketing_mob@2x.png 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./img/Tarasov-3.jpg" alt="Tarasov" />
+              </picture>
+
               <div class="team__layout">
                 <h3 class="team__item">Микола Тарасов</h3>
                 <p class="team__item_position">Marketing</p>
@@ -404,7 +505,58 @@
             </li>
 
             <li class="team__list_members">
-              <img src="./img/Yermakov-4.jpg" alt="Yermakov" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team_photo/webp/desktop/ui_designer_desktop.webp    1x,
+                    ./img/team_photo/webp/desktop/ui_designer_desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/desktop/ui_designer_desktop.png    1x,
+                    ./img/team_photo/png/desktop/ui_designer_desktop@2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team_photo/webp/tab/ui_designer_tab.webp    1x,
+                    ./img/team_photo/webp/tab/ui_designer_tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/tab/ui_designer_tab.png    1x,
+                    ./img/team_photo/png/tab/ui_designer_tab@2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./img/team_photo/webp/mob/ui_designer_mob.webp    1x,
+                    ./img/team_photo/webp/mob/ui_designer_mob@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="img/webp"
+                />
+                <source
+                  srcset="
+                    ./img/team_photo/png/mob/ui_designer_mob.png    1x,
+                    ./img/team_photo/png/mob/ui_designer_mob@2x.png 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <img src="./img/Yermakov-4.jpg" alt="Yermakov" />
+              </picture>
+
               <div class="team__layout">
                 <h3 class="team__item">Михайло Єрмаков</h3>
                 <p class="team__item_position">UI Designer</p>
@@ -450,7 +602,7 @@
       <!-- TEAM -->
 
       <!-- CUSTOMERS -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="regular-customer">Постійні клієнти</h2>
           <div class="cust-vect">
@@ -505,12 +657,12 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- CUSTOMERS -->
     </main>
 
     <!-- FOOTER -->
-    <!-- <footer class="background-footer">
+    <footer class="background-footer">
       <div class="container all-footer-positions">
         <div class="left-side-footer">
           <address>
@@ -599,7 +751,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- FOOTER -->
 
     <!-- MODAL WINDOW -->

@@ -15,11 +15,23 @@
     border-radius: 4px;
 }
 
+@media screen and (max-width: 480px) {
+    .vector-item {
+        display: block;
+    }
+}
+
 .benefits-vectors {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .benefits-vectors {
+        display: block;
+    }
 }
 
 .item {
@@ -53,6 +65,13 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+@media screen and (max-width: 480px) {
+    .customer-list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
 }
 
 .customer-link {

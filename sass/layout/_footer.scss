@@ -26,7 +26,6 @@
     margin-bottom: 9px;
 }
 
-
 .flex-for-address:not(:last-child) {
     margin-bottom: 9px;
     white-space: nowrap;
@@ -35,6 +34,23 @@
 .all-footer-positions {
     display: flex;
     align-items: baseline;
+}
+
+@media screen and (max-width:480px) {
+    .all-footer-positions {
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .all-footer-positions {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 
 .connection {

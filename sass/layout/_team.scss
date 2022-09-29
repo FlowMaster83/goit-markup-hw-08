@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+    .team__list {
+        display: block;
+    }
+}
+
 .team__list_members {
     background-color: var(--white);
     flex-basis: calc((100% - 90px) / 4);

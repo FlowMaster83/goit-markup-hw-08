@@ -222,6 +222,14 @@ a {
   align-items: flex-start;
 }
 
+@media screen and (max-width: 480px) {
+  .benefits-caption {
+    display: block;
+  }
+  .benefits-list {
+    display: block;
+  }
+}
 .benefits {
   margin-bottom: 10px;
   justify-content: center;
@@ -311,6 +319,11 @@ a {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 480px) {
+  .vector-item {
+    display: block;
+  }
+}
 .benefits-vectors {
   display: flex;
   justify-content: center;
@@ -318,6 +331,11 @@ a {
   gap: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .benefits-vectors {
+    display: block;
+  }
+}
 .item {
   display: block;
   width: 70px;
@@ -351,6 +369,12 @@ a {
   gap: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .customer-list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
 .customer-link {
   display: flex;
   justify-content: center;
@@ -544,10 +568,15 @@ screen
     background-image: url("../img/people-working@2x.jpg");
   }
 }
-.activites {
+.activities {
   padding-top: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .activities {
+    display: none;
+  }
+}
 .activities-list {
   display: flex;
 }
@@ -573,6 +602,11 @@ screen
   align-items: center;
 }
 
+@media screen and (max-width: 480px) {
+  .team__list {
+    display: block;
+  }
+}
 .team__list_members {
   background-color: var(--white);
   flex-basis: calc((100% - 90px) / 4);
@@ -1015,6 +1049,21 @@ screen
   align-items: baseline;
 }
 
+@media screen and (max-width: 480px) {
+  .all-footer-positions {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .all-footer-positions {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .connection {
   display: flex;
   margin-bottom: 20px;
