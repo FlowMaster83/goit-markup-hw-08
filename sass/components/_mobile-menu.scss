@@ -23,15 +23,24 @@
 }
 
 .close-mobile-menu-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
     border: none;
     padding: 0;
     background-color: transparent;
     line-height: 0;
-    position: absolute;
-    top: 10px;
-    right: 15px;
     width: 40px;
     height: 40px;
+}
+
+.close-mobile-menu-btn__icon {
+    width: 19px;
+    height: 19px;
+}
+
+.mob-menu__div {
+    display: block;
 }
 
 .mobile-menu__container {
@@ -40,7 +49,77 @@
     padding-top: 48px;
 }
 
-.close-mobile-menu-btn__icon {
-    width: 19px;
-    height: 19px;
+.mob-menu__navigation_list_item {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.mob-menu__navigation_list_link {
+    display: block;
+    padding-bottom: 32px;
+    position: relative;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-duration-function);
+
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+.mob-menu__contactlist {
+    display: block;
+    margin-top: auto;
+    margin-bottom: 64px;
+}
+
+.mob-menu__contactlist_tel {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    padding-bottom: 32px;
+}
+
+.mob-menu__contactlist_mail {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+.mob-menu__social-list {
+    display: flex;
+}
+
+.mob-menu__social-list_link {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+    
+    &:not(:last-child) {
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
 }
