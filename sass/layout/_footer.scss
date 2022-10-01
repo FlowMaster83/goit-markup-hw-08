@@ -1,5 +1,26 @@
-.left-side-footer {
+.footer-list {
+    display: inline-flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-decoration: none;
+    font-style: normal;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding-left: 0;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.footer-elements {
     margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-elements {
+        width: 100%;
+    }
 }
 
 .background-footer {
@@ -34,22 +55,17 @@
 .all-footer-positions {
     display: flex;
     align-items: baseline;
-}
-
-@media screen and (max-width:480px) {
-    .all-footer-positions {
-        display: block;
-    }
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 60px;
 }
 
 @media screen and (min-width:768px) {
     .all-footer-positions {
-        display: flex;
+        justify-content: center;
+        flex-direction: row;
         align-items: baseline;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        padding-top: 60px;
-        padding-bottom: 60px;
     }
 }
 
@@ -64,7 +80,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white);
-
 }
 
 .footer-social-list {
@@ -112,6 +127,7 @@
 }
 
 .sign-up {
+    display: block;
     margin-bottom: 20px;
     justify-content: flex-start;
     font-weight: 700;
@@ -125,7 +141,14 @@
 
 .footer-form {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+    .footer-form {
+        flex-direction: column;
+    }
 }
 
 .footer-form-field {
@@ -162,6 +185,12 @@
     border: 0;
     border-radius: 4px;
     padding: 0;
+}
+
+@media screen and (max-width: 1199px) {
+    .sign-up-btn {
+        margin-top: 20px;
+    }
 }
 
 .sign-up-text {

@@ -12,6 +12,14 @@
     text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+    .header__logo-web {
+        margin-right: 88px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+}
+
 span {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;

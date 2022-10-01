@@ -1,42 +1,37 @@
-.ben-vect {
-    display: flex;
-    flex-basis: calc((100% - 90px) / 4);
-    gap: 30px;
-}
-
 .vector-item {
+    background-color: #F5F4FA;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
+    flex-wrap: wrap;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
     .vector-item {
-        display: block;
+        width: 270px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .vector-item {
         width: 450px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .vector-item {
+        width: 354px;
     }
 }
 
 .benefits-vectors {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-@media screen and (max-width: 480px) {
-    .benefits-vectors {
-        display: block;
-    }
-}
-
 .item {
-    display: block;
     width: 70px;
     height: 70px;
 }
@@ -66,11 +61,11 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 480px) {
     .customer-list {
-        justify-content: flex-start;
         flex-wrap: wrap;
     }
 }

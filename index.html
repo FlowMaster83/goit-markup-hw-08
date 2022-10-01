@@ -53,14 +53,14 @@
             >
           </li>
         </ul>
-      </div>
 
-      <!-- BURGER -->
-      <button class="open-mobile-menu-btn js-open-menu">
-        <svg class="open-mobile-menu-btn__icon">
-          <use href="./img/sprite.svg#icon-burger"></use>
-        </svg>
-      </button>
+        <!-- BURGER -->
+        <button class="open-mobile-menu-btn js-open-menu">
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
       <!-- BURGER -->
     </header>
     <!-- HEADER -->
@@ -132,62 +132,80 @@
       <!-- HERO -->
 
       <!-- BENEFITS -->
-      <section class="section">
+      <section class="section benefits-section">
         <div class="container">
           <h2 class="benefits-caption">Наші переваги</h2>
-          <div class="ben-vect">
             <ul class="benefits-vectors">
               <li class="vector-item">
+                <div class="ben-vect"></div>
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-antenna"></use>
                 </svg>
+                <h3 class="benefits">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="benefits-description">
+                  Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                </p>
               </li>
 
               <li class="vector-item">
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-clock"></use>
                 </svg>
+                <h3 class="benefits">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="benefits-description">
+                  Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                </p>
               </li>
 
               <li class="vector-item">
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-diagram"></use>
                 </svg>
+                <h3 class="benefits">ПЛАНУВАННЯ</h3>
+                <p class="benefits-description">
+                  Так само консультація з широким активом значною мірою зумовлює.
+                </p>
               </li>
 
               <li class="vector-item">
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-astronaut"></use>
                 </svg>
+                <h3 class="benefits">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="benefits-description">
+                  Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                </p>
               </li>
             </ul>
           </div>
 
           <ul class="benefits-list">
             <li class="benefits-points">
-              <h3 class="benefits">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <!-- <h3 class="benefits">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="benefits-description">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p>
+              </p> -->
             </li>
 
             <li class="benefits-points">
-              <h3 class="benefits">ПУНКТУАЛЬНІСТЬ</h3>
+              <!-- <h3 class="benefits">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="benefits-description">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
+            </li> -->
             </li>
+
             <li class="benefits-points">
-              <h3 class="benefits">ПЛАНУВАННЯ</h3>
+              <!-- <h3 class="benefits">ПЛАНУВАННЯ</h3>
               <p class="benefits-description">
                 Так само консультація з широким активом значною мірою зумовлює.
-              </p>
+              </p> -->
             </li>
             <li class="benefits-points">
-              <h3 class="benefits">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <!-- <h3 class="benefits">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="benefits-description">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-              </p>
+              </p> -->
             </li>
           </ul>
         </div>
@@ -277,7 +295,11 @@
                   media="(min-width: 480px)"
                 />
 
-                <img src="./img/Demyanenko-1.jpg" alt="Demyanenko" />
+                <img
+                  src="./img/team_photo/png/mob/product_designer_mob.png"
+                  alt="Demyanenko"
+                  class="team__img"
+                />
               </picture>
 
               <div class="team__layout">
@@ -370,7 +392,11 @@
                   media="(min-width: 480px)"
                 />
 
-                <img src="./img/Repina-2.jpg" alt="Repina" />
+                <img
+                  src="./img/team_photo/png/mob/frontend_developer_mob.png"
+                  alt="Repina"
+                  class="team__img"
+                />
               </picture>
 
               <div class="team__layout">
@@ -463,7 +489,11 @@
                   media="(min-width: 480px)"
                 />
 
-                <img src="./img/Tarasov-3.jpg" alt="Tarasov" />
+                <img
+                  src="./img/team_photo/png/mob/marketing_mob.png"
+                  alt="Tarasov"
+                  class="team__img"
+                />
               </picture>
 
               <div class="team__layout">
@@ -556,7 +586,11 @@
                   media="(min-width: 480px)"
                 />
 
-                <img src="./img/Yermakov-4.jpg" alt="Yermakov" />
+                <img
+                  src="./img/team_photo/png/mob/ui_designer_mob.png"
+                  alt="Yermakov"
+                  class="team__img"
+                />
               </picture>
 
               <div class="team__layout">
@@ -666,9 +700,9 @@
     <!-- FOOTER -->
     <footer class="background-footer">
       <div class="container all-footer-positions">
-        <div class="left-side-footer">
+        <div class="footer-elements">
           <address>
-            <ul>
+            <ul class="footer-list">
               <li class="for-logo">
                 <a class="logo-web-footer" href="./index.html"
                   >Web<span class="logo-studio-footer">Studio</span></a
@@ -695,7 +729,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="footer-elements">
           <p class="connection">Приєднуйтесь</p>
           <ul class="footer-social-list">
             <li class="footer-social-list-item">
@@ -732,7 +766,7 @@
           </ul>
         </div>
 
-        <div class="footer-sign-up">
+        <div class="footer-elements">
           <p class="sign-up">Підпишіться на розсилку</p>
           <form class="footer-form">
             <label class="footer-form-field">
