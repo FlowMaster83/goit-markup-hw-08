@@ -195,6 +195,7 @@ a:link {
 }
 
 .mob-menu__contactlist {
+  padding-top: auto;
   display: block;
   margin-top: auto;
   margin-bottom: 64px;
@@ -682,6 +683,11 @@ span {
   gap: 30px;
 }
 
+@media screen and (min-width: 480px) {
+  .header__contactlist {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .header__contactlist {
     display: block;
@@ -1279,10 +1285,9 @@ screen
 }
 
 .footer-elements {
-  margin-right: 70px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 767px) {
@@ -1330,9 +1335,14 @@ screen
 
 @media screen and (min-width: 768px) {
   .all-footer-positions {
-    justify-content: center;
     flex-direction: row;
     align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .all-footer-positions {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 .connection {
@@ -1407,6 +1417,7 @@ screen
   display: flex;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1199px) {
