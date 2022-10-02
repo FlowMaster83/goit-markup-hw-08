@@ -16,12 +16,6 @@
     align-items: flex-start;
 }
 
-@media screen and (max-width: 767px) {
-    .footer-elements {
-        width: 100%;
-    }
-}
-
 .background-footer {
     display: flex;
     align-items: baseline;
@@ -52,15 +46,16 @@
 }
 
 .all-footer-positions {
+    width: 100%;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 60px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .all-footer-positions {
         flex-direction: row;
         align-items: baseline;
@@ -75,9 +70,10 @@
 }
 
 .connection {
+    width: 100%;
     display: flex;
     margin-bottom: 20px;
-    justify-content: flex-start;
+    justify-content: center;
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
@@ -132,9 +128,10 @@
 }
 
 .sign-up {
-    display: block;
+    width: 100%;
+    display: flex;
     margin-bottom: 20px;
-    justify-content: flex-start;
+    justify-content: center;
     font-weight: 700;
     font-style: normal;
     font-size: 14px;

@@ -1,42 +1,51 @@
 .ben-vect {
-    background-color: #F5F4FA;
-    height: 120px;
+    display: flex;
+    flex-basis: calc((100% - 90px) / 4);
+    gap: 30px;
 }
 
 .vector-item {
-    background-color: #F5F4FA;
+    width: 270px;
     height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}    
 
-@media screen and (min-width: 1200px) {
-    .vector-item {
-        width: 270px;
+.vector-item {
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
     }
-}
 
-@media screen and (min-width: 480px) {
-    .vector-item {
-        width: 450px;
+    @media screen and (min-width: 1140px) {
+        flex-basis: calc((100% - 3 * 30px) / 3);
     }
-}
 
-@media screen and (min-width: 768px) {
-    .vector-item {
-        width: 354px;
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
     }
 }
 
 .benefits-vectors {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
+.benefits-vectors {
+    @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    }
+}
 .item {
+    display: block;
+    margin: auto;
     width: 70px;
     height: 70px;
 }

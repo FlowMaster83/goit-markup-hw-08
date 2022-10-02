@@ -7,7 +7,6 @@
     z-index: 999;
     background-color: #ffffff;
 
-    transform: translateX(100%);
     transition: var(--transition-duration-function);
 
     visibility: hidden;
@@ -19,7 +18,7 @@
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
-    transform: translateX(0);
+    transition: var(--transition-duration-function);
 }
 
 .close-mobile-menu-btn {
@@ -45,8 +44,11 @@
 
 .mobile-menu__container {
     position: relative;
-    padding-left: 40px;
-    padding-top: 48px;
+    padding: 48px 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .mob-menu__navigation_list_item {
@@ -64,6 +66,9 @@
     padding-bottom: 32px;
     position: relative;
     align-items: center;
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 40px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -75,10 +80,13 @@
     &:hover {
         color: var(--accent-color);
     }
+
+    .current {
+        color: var(--accent-color);
+    }
 }
 
 .mob-menu__contactlist {
-    padding-top: auto;
     display: block;
     margin-top: auto;
     margin-bottom: 64px;
@@ -105,22 +113,44 @@
     color: #757575;
 }
 
+.mob-menu__contact-link_tel {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+
+.mob-menu__contact-link_mail {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
 .mob-menu__social-list {
     display: flex;
 }
 
 .mob-menu__social-list_link {
-    font-family: 'Roboto', 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: #2196F3;
-    
     &:not(:last-child) {
         margin-right: 10px;
         padding-right: 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
+}
+
+.mob-menu__social-item {
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
 }

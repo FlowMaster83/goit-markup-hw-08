@@ -3,6 +3,16 @@
     color: var(--grey);
 }
 
+.benefits-points {
+    background-color: var(--background-color);
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.benefits-points:not(:last-child) {
+    margin-right: 30px;
+}
+
 .team__item_position {
     margin-bottom: 16px;
     font-size: 16px;

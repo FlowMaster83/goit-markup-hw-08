@@ -59,11 +59,6 @@ a {
   text-decoration: none;
 }
 
-a:visited,
-a:link {
-  text-decoration: none;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -127,7 +122,6 @@ a:link {
   height: 100vh;
   z-index: 999;
   background-color: #ffffff;
-  transform: translateX(100%);
   transition: var(--transition-duration-function);
   visibility: hidden;
   opacity: 0;
@@ -138,7 +132,7 @@ a:link {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
-  transform: translateX(0);
+  transition: var(--transition-duration-function);
 }
 
 .close-mobile-menu-btn {
@@ -164,8 +158,11 @@ a:link {
 
 .mobile-menu__container {
   position: relative;
-  padding-left: 40px;
-  padding-top: 48px;
+  padding: 48px 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mob-menu__navigation_list_item {
@@ -183,6 +180,9 @@ a:link {
   padding-bottom: 32px;
   position: relative;
   align-items: center;
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 40px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -193,9 +193,11 @@ a:link {
 .mob-menu__navigation_list_link:focus, .mob-menu__navigation_list_link:hover {
   color: var(--accent-color);
 }
+.mob-menu__navigation_list_link .current {
+  color: var(--accent-color);
+}
 
 .mob-menu__contactlist {
-  padding-top: auto;
   display: block;
   margin-top: auto;
   margin-bottom: 64px;
@@ -222,28 +224,59 @@ a:link {
   color: #757575;
 }
 
+.mob-menu__contact-link_tel {
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-menu__contact-link_mail {
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
 .mob-menu__social-list {
   display: flex;
 }
 
-.mob-menu__social-list_link {
-  font-family: "Roboto", "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
-  color: #2196F3;
-}
 .mob-menu__social-list_link:not(:last-child) {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+.mob-menu__social-item {
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
 .benefits-description {
   line-height: 1.71;
   color: var(--grey);
+}
+
+.benefits-points {
+  background-color: var(--background-color);
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.benefits-points:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team__item_position {
@@ -321,13 +354,18 @@ a:link {
 }
 .benefits {
   margin-bottom: 10px;
-  display: flex;
   justify-content: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: inherit;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 @media screen and (min-width: 480px) {
@@ -375,7 +413,6 @@ a:link {
   justify-content: center;
   align-items: center;
   column-gap: 10px;
-  margin-bottom: 30px;
 }
 
 .social-list_link {
@@ -401,41 +438,54 @@ a:link {
 }
 
 .ben-vect {
-  background-color: #F5F4FA;
-  height: 120px;
-}
-
-.vector-item {
-  background-color: #F5F4FA;
-  height: 120px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-@media screen and (min-width: 1200px) {
-  .vector-item {
-    width: 270px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .vector-item {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .vector-item {
-    width: 354px;
-  }
-}
-.benefits-vectors {
-  display: flex;
-  flex-wrap: wrap;
+  flex-basis: calc((100% - 90px) / 4);
   gap: 30px;
 }
 
+.vector-item {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .vector-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1140px) {
+  .vector-item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (max-width: 767px) {
+  .vector-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.benefits-vectors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-vectors {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-bottom: -30px;
+  }
+}
+
 .item {
+  display: block;
+  margin: auto;
   width: 70px;
   height: 70px;
 }
@@ -589,6 +639,7 @@ span {
 }
 
 .header__div {
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -688,14 +739,20 @@ span {
   gap: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__contactlist {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contactlist {
     display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contactlist {
+    display: flex;
+    align-items: center;
   }
 }
 .header__contactlist_item:not(:first-child) {
@@ -703,7 +760,7 @@ span {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .header__contactlist_item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -715,6 +772,9 @@ span {
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-style: normal;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--grey);
@@ -725,13 +785,26 @@ span {
   color: var(--blue);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
   .contact-link {
     padding-top: 0;
     padding-bottom: 0;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-link {
+    transition: color var(--transition-duration-function);
   }
 }
 .contact-link_smartphone {
@@ -860,7 +933,13 @@ screen
   gap: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .team__list {
+    display: block;
+  }
+}
 .team__list_members {
+  margin-bottom: 30px;
   background-color: var(--white);
   flex-basis: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -874,7 +953,10 @@ screen
 }
 @media screen and (min-width: 768px) {
   .team__list_members {
+    display: flex;
+    flex-wrap: wrap;
     width: 354px;
+    gap: 30px;
   }
 }
 .team__layout {
@@ -887,6 +969,16 @@ screen
   width: 450px;
 }
 
+@media screen and (min-width: 1200px) {
+  .team__img {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__img {
+    width: 354px;
+  }
+}
 @media screen and (min-width: 480px) {
   .team__img {
     width: 450px;
@@ -1296,11 +1388,6 @@ screen
   align-items: flex-start;
 }
 
-@media screen and (max-width: 767px) {
-  .footer-elements {
-    width: 100%;
-  }
-}
 .background-footer {
   display: flex;
   align-items: baseline;
@@ -1331,11 +1418,12 @@ screen
 }
 
 .all-footer-positions {
+  width: 100%;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 60px;
 }
 
@@ -1352,9 +1440,10 @@ screen
   }
 }
 .connection {
+  width: 100%;
   display: flex;
   margin-bottom: 20px;
-  justify-content: flex-start;
+  justify-content: center;
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
@@ -1407,9 +1496,10 @@ screen
 }
 
 .sign-up {
-  display: block;
+  width: 100%;
+  display: flex;
   margin-bottom: 20px;
-  justify-content: flex-start;
+  justify-content: center;
   font-weight: 700;
   font-style: normal;
   font-size: 14px;

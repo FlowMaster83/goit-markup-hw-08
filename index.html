@@ -79,7 +79,7 @@
         <div class="mob-menu__div container">
           <ul class="mob-menu__navigation_list">
             <li class="mob-menu__navigation_list_item">
-              <a class="mob-menu__navigation_list_link" href="#">Студія</a>
+              <a class="mob-menu__navigation_list_link current" href="#">Студія</a>
             </li>
             <li class="mob-menu__navigation_list_item">
               <a class="mob-menu__navigation_list_link" href="./portfolio.html">Портфоліо</a>
@@ -92,10 +92,10 @@
           <!-- mobile menu contacts -->
           <ul class="mob-menu__contactlist">
             <li class="mob-menu__contactlist_tel">
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="mob-menu__contact-link_tel" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
             <li class="mob-menu__contactlist_mail">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="mob-menu__contact-link_mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
           </ul>
 
@@ -103,16 +103,16 @@
           <!-- mobile menu social -->
           <ul class="mob-menu__social-list">
             <li class="mob-menu__social-list_link">
-              <a href="">Instagram</a>
+              <a class="mob-menu__social-item" href="">Instagram</a>
             </li>
             <li class="mob-menu__social-list_link">
-              <a href="">Twitter</a>
+              <a class="mob-menu__social-item" href="">Twitter</a>
             </li>
             <li class="mob-menu__social-list_link">
-              <a href="">Facebook</a>
+              <a class="mob-menu__social-item" href="">Facebook</a>
             </li>
             <li class="mob-menu__social-list_link">
-              <a href="">LinkedIn</a>
+              <a class="mob-menu__social-item" href="">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -132,19 +132,20 @@
       <!-- HERO -->
 
       <!-- BENEFITS -->
-      <section class="section benefits-section">
+      <section class="section">
         <div class="container">
           <h2 class="benefits-caption">Наші переваги</h2>
+          <div class="ben-vect">
             <ul class="benefits-vectors">
               <li class="vector-item">
-                <div class="ben-vect">
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-antenna"></use>
                 </svg>
-                <h3 class="benefits">УВАГА ДО ДЕТАЛЕЙ</h3>
-                <p class="benefits-description">
-                  Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-                </p>
+                <div class="benefits-points">
+                  <h3 class="benefits">УВАГА ДО ДЕТАЛЕЙ</h3>
+                  <p class="benefits-descrition">
+                    Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                  </p>
                 </div>
               </li>
 
@@ -152,63 +153,39 @@
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-clock"></use>
                 </svg>
-                <h3 class="benefits">ПУНКТУАЛЬНІСТЬ</h3>
-                <p class="benefits-description">
-                  Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-                </p>
+                <div class="benefits-points">
+                  <h3 class="benefits">ПУНКТУАЛЬНІСТЬ</h3>
+                  <p class="benefits-descrition">
+                    Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                  </p>
+                </div>
               </li>
 
               <li class="vector-item">
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-diagram"></use>
                 </svg>
-                <h3 class="benefits">ПЛАНУВАННЯ</h3>
-                <p class="benefits-description">
-                  Так само консультація з широким активом значною мірою зумовлює.
-                </p>
+                <div class="benefits-points">
+                  <h3 class="benefits">ПЛАНУВАННЯ</h3>
+                  <p class="benefits-descrition">
+                    Так само консультація з широким активом значною мірою зумовлює.
+                  </p>
+                </div>
               </li>
 
               <li class="vector-item">
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-astronaut"></use>
                 </svg>
-                <h3 class="benefits">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                <p class="benefits-description">
-                  Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                </p>
+                <div class="benefits-points">
+                  <h3 class="benefits">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                  <p class="benefits-descrition">
+                    Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
-
-          <ul class="benefits-list">
-            <li class="benefits-points">
-              <!-- <h3 class="benefits">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="benefits-description">
-                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-              </p> -->
-            </li>
-
-            <li class="benefits-points">
-              <!-- <h3 class="benefits">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="benefits-description">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-              </p>
-            </li> -->
-            </li>
-
-            <li class="benefits-points">
-              <!-- <h3 class="benefits">ПЛАНУВАННЯ</h3>
-              <p class="benefits-description">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p> -->
-            </li>
-            <li class="benefits-points">
-              <!-- <h3 class="benefits">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="benefits-description">
-                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-              </p> -->
-            </li>
-          </ul>
         </div>
       </section>
       <!-- BENEFITS -->
@@ -792,7 +769,7 @@
     <!-- FOOTER -->
 
     <!-- MODAL WINDOW -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-icon">
@@ -878,13 +855,13 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- JS MOBILE MENU -->
     <script src="./js/mobile-menu.js"></script>
     <!-- JS MOBILE MENU -->
 
     <!-- JS MODAL WINDOW -->
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <!-- JS MODAL WINDOW -->
   </body>
 </html>
