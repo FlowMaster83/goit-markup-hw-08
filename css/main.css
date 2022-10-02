@@ -1388,11 +1388,6 @@ screen
   align-items: flex-start;
 }
 
-@media screen and (max-width: 767px) {
-  .footer-elements {
-    width: 100%;
-  }
-}
 .background-footer {
   display: flex;
   align-items: baseline;
@@ -1424,14 +1419,19 @@ screen
 
 .all-footer-positions {
   width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
   gap: 60px;
 }
 
+@media screen and (min-width: 480px) {
+  .all-footer-positions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 768px) {
   .all-footer-positions {
     flex-direction: row;
