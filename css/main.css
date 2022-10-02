@@ -1388,6 +1388,11 @@ screen
   align-items: flex-start;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-elements {
+    width: 100%;
+  }
+}
 .background-footer {
   display: flex;
   align-items: baseline;
