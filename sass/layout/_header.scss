@@ -49,6 +49,7 @@
 
 .navigation__list_item {
     position: relative;
+    
     &:not(:last-child) {
         margin-right: 50px;
         justify-content: center;
@@ -143,7 +144,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
     .header__contactlist {
         display: block;
     }

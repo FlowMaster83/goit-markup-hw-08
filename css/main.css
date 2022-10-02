@@ -275,7 +275,7 @@ a:link {
 }
 
 .solutions-main-caption {
-  width: 696px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -398,6 +398,11 @@ a:link {
   height: 20px;
   fill: inherit;
   transition: fill var(--transition-duration-function);
+}
+
+.ben-vect {
+  background-color: #F5F4FA;
+  height: 120px;
 }
 
 .vector-item {
@@ -688,7 +693,7 @@ span {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
   .header__contactlist {
     display: block;
   }
@@ -761,6 +766,7 @@ span {
   }
 }
 .hero {
+  width: 100%;
   text-align: center;
   max-width: 1660px;
   margin: 0 auto;
