@@ -20,7 +20,7 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="header__div container">
+      <div class="container header__div">
         <nav class="header__navigation">
           <a class="header__logo-web" href="./index.html">Web<span>Studio</span></a>
           <ul class="header__navigation_list">
@@ -65,63 +65,68 @@
     </header>
     <!-- HEADER -->
 
-    <!-- MOBILE MENU -->
-    <div class="mobile-menu js-menu-container">
-      <div class="container mobile-menu__container">
-        <!-- close icon -->
-        <button class="close-mobile-menu-btn js-close-menu">
-          <svg class="close-mobile-menu-btn__icon">
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="container mobile-container">
+        <button class="menu-button menu-button--positioning js-close-menu">
+          <svg
+            width="40"
+            height="40"
+            aria-label="Перемикач мобiльного меню"
+            class="menu-button__icon-cross"
+          >
             <use href="./img/sprite.svg#mob-menu-icon-close"></use>
           </svg>
         </button>
+
         <!-- close icon -->
-        <!-- mobile menu navigation -->
-        <div class="mob-menu__div container">
-          <ul class="mob-menu__navigation_list">
-            <li class="mob-menu__navigation_list_item">
-              <a class="mob-menu__navigation_list_link current" href="#">Студія</a>
+        <!-- <button class="close-mobile-menu-btn js-close-menu">
+          <svg class="close-mobile-menu-btn__icon">
+            <use href="./img/sprite.svg#mob-menu-icon-close"></use>
+          </svg>
+        </button> -->
+        <!-- close icon -->
+
+        <ul class="mobile-menu list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link modile-menu__link--current">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+
+        <div>
+          <ul class="mobile-menu-contacts list">
+            <li class="">
+              <a href="tel:+380961111111" class="mobile-menu-contacts__tel">+38 096 111 11 11</a>
             </li>
-            <li class="mob-menu__navigation_list_item">
-              <a class="mob-menu__navigation_list_link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="mob-menu__navigation_list_item">
-              <a class="mob-menu__navigation_list_link" href="#">Контакти</a>
-            </li>
-          </ul>
-          <!-- mobile menu navigation -->
-          <!-- mobile menu contacts -->
-          <ul class="mob-menu__contactlist">
-            <li class="mob-menu__contactlist_tel">
-              <a class="mob-menu__contact-link_tel" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-            <li class="mob-menu__contactlist_mail">
-              <a class="mob-menu__contact-link_mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+            <li class="">
+              <a href="malito:info@devstudio.com" class="mobile-menu-contacts__email">
+                info@devstudio.com</a
               >
             </li>
           </ul>
-
-          <!-- mobile menu contacts -->
-          <!-- mobile menu social -->
-          <ul class="mob-menu__social-list">
-            <li class="mob-menu__social-list_link">
-              <a class="mob-menu__social-item" href="">Instagram</a>
+          <ul class="mobile-menu-links list">
+            <li class="mobile-menu-links__item">
+              <a href="#" class="mobile-social-link">Instagram</a>
             </li>
-            <li class="mob-menu__social-list_link">
-              <a class="mob-menu__social-item" href="">Twitter</a>
+            <li class="mobile-menu-links__item">
+              <a href="#" class="mobile-social-link">Twitter</a>
             </li>
-            <li class="mob-menu__social-list_link">
-              <a class="mob-menu__social-item" href="">Facebook</a>
+            <li class="mobile-menu-links__item">
+              <a href="#" class="mobile-social-link">Facebook</a>
             </li>
-            <li class="mob-menu__social-list_link">
-              <a class="mob-menu__social-item" href="">LinkedIn</a>
+            <li class="mobile-menu-links__item">
+              <a href="#" class="mobile-social-link">LinkedIn</a>
             </li>
           </ul>
         </div>
-        <!-- mobile menu social -->
       </div>
     </div>
-    <!-- MOBILE MENU -->
+
 
     <main>
       <!-- HERO -->
@@ -136,58 +141,62 @@
       <!-- BENEFITS -->
       <section class="section">
         <div class="container">
-          <h2 class="benefits-caption">Наші переваги</h2>
-          <div class="ben-vect">
-            <ul class="benefits-vectors">
-              <li class="vector-item">
+          <h2 class="benefits-main-caption">Наші переваги</h2>
+          <!-- <div> -->
+          <ul class="benefits-list">
+            <li class="benefits-item">
+              <div class="benefits-icon">
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-antenna"></use>
                 </svg>
-                <div class="benefits-points">
-                  <h3 class="benefits">УВАГА ДО ДЕТАЛЕЙ</h3>
-                  <p class="benefits-description">
-                    Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-                  </p>
-                </div>
-              </li>
+              </div>
 
-              <li class="vector-item">
+              <h3 class="benefits-caption">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits-description">
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+              </p>
+            </li>
+
+            <li class="benefits-item">
+              <div class="benefits-icon">
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-clock"></use>
                 </svg>
-                <div class="benefits-points">
-                  <h3 class="benefits">ПУНКТУАЛЬНІСТЬ</h3>
-                  <p class="benefits-description">
-                    Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-                  </p>
-                </div>
-              </li>
+              </div>
 
-              <li class="vector-item">
+              <h3 class="benefits-caption">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits-description">
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              </p>
+            </li>
+
+            <li class="benefits-item">
+              <div class="benefits-icon">
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-diagram"></use>
                 </svg>
-                <div class="benefits-points">
-                  <h3 class="benefits">ПЛАНУВАННЯ</h3>
-                  <p class="benefits-description">
-                    Так само консультація з широким активом значною мірою зумовлює.
-                  </p>
-                </div>
-              </li>
+              </div>
 
-              <li class="vector-item">
+              <h3 class="benefits-caption">ПЛАНУВАННЯ</h3>
+              <p class="benefits-description">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+
+            <li class="benefits-item">
+              <div class="benefits-icon">
                 <svg class="item">
                   <use href="./img/sprite.svg#icon-astronaut"></use>
                 </svg>
-                <div class="benefits-points">
-                  <h3 class="benefits">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                  <p class="benefits-description">
-                    Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
+              </div>
+
+              <h3 class="benefits-caption">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits-description">
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+              </p>
+            </li>
+          </ul>
+          <!-- </div> -->
         </div>
       </section>
       <!-- BENEFITS -->
@@ -221,7 +230,7 @@
       <!-- ACTIVITIES -->
 
       <!-- TEAM -->
-      <section class="team section">
+      <section class="section team">
         <div class="container">
           <h2 class="team__main-caption">Наша команда</h2>
           <ul class="team__list">
@@ -621,7 +630,7 @@
       <section class="section">
         <div class="container">
           <h2 class="regular-customer">Постійні клієнти</h2>
-          <div class="cust-vect">
+          <!-- <div class="cust-vect"> -->
             <ul class="customer-list">
               <li class="customer-item">
                 <a href="" class="customer-link">
@@ -671,7 +680,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          <!-- </div> -->
         </div>
       </section>
       <!-- CUSTOMERS -->
@@ -680,15 +689,12 @@
     <!-- FOOTER -->
     <footer class="background-footer">
       <div class="container all-footer-positions">
-        <div class="footer-elements">
+        <div>
+          <a class="logo-web-footer" href="./index.html"
+            >Web<span class="logo-studio-footer">Studio</span></a
+          >
           <address>
             <ul class="footer-list">
-              <li class="for-logo">
-                <a class="logo-web-footer" href="./index.html"
-                  >Web<span class="logo-studio-footer">Studio</span></a
-                >
-              </li>
-
               <li class="flex-for-address">
                 <a
                   href="https://goo.gl/maps/PK4acPdhrwXjEn6c6"
@@ -709,7 +715,7 @@
           </address>
         </div>
 
-        <div class="footer-elements">
+        <div class="footer-connection">
           <p class="connection">Приєднуйтесь</p>
           <ul class="footer-social-list">
             <li class="footer-social-list-item">
@@ -746,10 +752,10 @@
           </ul>
         </div>
 
-        <div class="footer-elements">
+        <div class="footer-sign-up">
           <p class="sign-up">Підпишіться на розсилку</p>
           <form class="footer-form">
-            <label class="footer-form-field">
+            <label>
               <input
                 class="input-styles"
                 type="email"

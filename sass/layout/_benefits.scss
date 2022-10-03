@@ -1,4 +1,4 @@
-.benefits-caption {
+.benefits-main-caption {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -14,43 +14,28 @@
     overflow: hidden;
 }
 
-@media screen and (min-width: 480px) {
-    .benefits-caption {
-        display: block;
-    }
-}
-
-.ben-vect {
-    display: flex;
-    flex-basis: calc((100% - 90px) / 4);
+.benefits-list {
     gap: 30px;
 }
 
-.benefits-vectors {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.benefits-vectors {
-    @media screen and (min-width: 768px) {
+.benefits-list {
+    @media screen and (min-width: 1200px) {
         display: flex;
-        flex-wrap: wrap;
         margin-top: -30px;
         margin-bottom: -30px;
     }
 }
 
-.vector-item {
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
+.benefits-item {
+    width: 100%;
+    // width: 270px;
+    // height: 120px;
+    // margin-bottom: 30px;
+    // background-color: #F5F4FA;
+    // border-radius: 4px;
 }
 
-.vector-item {
+.benefits-item {
     @media screen and (min-width: 768px) {
         flex-basis: calc((100% - 2 * 30px) / 2);
     }
@@ -66,6 +51,26 @@
     }
 }
 
+// @media screen and (min-width: 480px) {
+//     .benefits-caption {
+//         display: block;
+//     }
+// }
+
+// .ben-vect {
+//     display: flex;
+//     flex-basis: calc((100% - 90px) / 4);
+//     gap: 30px;
+// }
+
+.benefits-icon {
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    width: 100%;
+    height: 120px;
+}
+
 .item {
     display: block;
     margin: auto;
@@ -73,33 +78,36 @@
     height: 70px;
 }
 
-.benefits-points {
-    background-color: var(--background-color);
-    height: 120px;
-    margin-bottom: 30px;
-}
+// .benefits-points {
+//     background-color: var(--background-color);
+//     height: 120px;
+//     margin-bottom: 30px;
+// }
 
-.benefits-points:not(:last-child) {
-    margin-right: 30px;
-}
+// .benefits-points:not(:last-child) {
+//     margin-right: 30px;
+// }
 
-.benefits {
+.benefits-caption {
+    margin-top: 0;
     margin-bottom: 10px;
-    justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: inherit;
-}
+    text-align: center;
 
-@media screen and (min-width: 480px) {
-    .benefits {
+    @media screen and (min-width: 768px) {
         text-align: center;
     }
 }
 
 .benefits-description {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 1.71;
     color: var(--grey);
 }

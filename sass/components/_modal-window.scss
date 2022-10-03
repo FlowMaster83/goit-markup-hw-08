@@ -5,16 +5,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--white);
-    width: 528px;
+    width: 100%;
+    max-width: 450px;
     height: 581px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-}
 
-.modal-close-icon {
-    width: 11px;
-    height: 11px;
-    fill: var(--black);
+    @media screen and (min-width: 1200px) {
+            max-width: 528px;
+        }
 }
 
 .modal-close-button {
@@ -32,9 +31,16 @@
     top: 8px;
     right: 8px;
 
-&:hover .modal-close-icon,
-&:focus .modal-close-icon {
-    fill: var(--blue);
-    transition: var(--transition-duration-function);
+    &:hover .modal-close-icon,
+    &:focus .modal-close-icon {
+        fill: var(--blue);
+        transition: var(--transition-duration-function);
     }
 }
+
+.modal-close-icon {
+    width: 11px;
+    height: 11px;
+    fill: var(--black);
+}
+

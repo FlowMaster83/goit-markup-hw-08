@@ -1,101 +1,138 @@
-.team__main-caption {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: inherit;
-}
-
-@media screen and (max-width: 767px) {
-    .team__main-caption {
-        font-size: 28px;
-        line-height: 1.18;
-        margin-bottom: 30px;
-    }
-}
-
 .team {
     background: var(--background-for-section-team)
 }
 
-.team__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+.team__main-caption {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
 }
 
-@media screen and (max-width: 480px) {
-    .team__list {
-        display: block;
+.team__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+@media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+@media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
     }
 }
 
 .team__list_members {
-    margin-bottom: 30px;
-    background-color: var(--white);
     flex-basis: calc((100% - 90px) / 4);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
-
-@media screen and (min-width: 480px) {
-    .team__list_members {
-        width: 450px;
+     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-background-color);
+    
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+        max-width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+        max-width: 270px;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .team__list_members {
-        display: flex;
-        flex-wrap: wrap;
-        width: 354px;
-        gap: 30px;
-    }
-}
+// .team__list_members {
+//     margin-bottom: 30px;
+//     background-color: var(--white);
+//     flex-basis: calc((100% - 90px) / 4);
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+// }
+
+// @media screen and (min-width: 480px) {
+//     .team__list_members {
+//         width: 450px;
+//     }
+// }
+
+// @media screen and (min-width: 768px) {
+//     .team__list_members {
+//         display: flex;
+//         flex-wrap: wrap;
+//         width: 354px;
+//         gap: 30px;
+//     }
+// }
 
 .team__layout {
-    text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.team__img {
-    width: 450px;
-}
-
+    padding-bottom: 24px;
+    
 @media screen and (min-width: 1200px) {
-    .team__img {
-        width: 270px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .team__img {
-        width: 354px;
-    }
-}
-
-@media screen and (min-width: 480px) {
-    .team__img {
-        width: 450px;
+    padding-bottom: 30px;
     }
 }
 
 .team__item {
+    margin-top: 0%;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.16;
+    line-height: 1.19;
     text-align: center;
     color: inherit;
 }
 
 .team__item_position {
+    margin-top: 0;
     margin-bottom: 16px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     color: var(--grey);
 }
+
+.team__social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+// .team__img {
+//     width: 450px;
+// }
+
+// @media screen and (min-width: 1200px) {
+//     .team__img {
+//         width: 270px;
+//     }
+// }
+
+// @media screen and (min-width: 768px) {
+//     .team__img {
+//         width: 354px;
+//     }
+// }
+
+// @media screen and (min-width: 480px) {
+//     .team__img {
+//         width: 450px;
+//     }
+// }

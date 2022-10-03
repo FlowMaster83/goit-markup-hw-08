@@ -1,39 +1,85 @@
 .regular-customer {
-    display: flex;
-    justify-content: center;
+    margin-top: 0;
     margin-bottom: 50px;
-    font-family: 'Roboto', 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color: #212121;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
 }
 
-.cust-vect {
-    display: flex;
-    flex-basis: calc((100% - 150px) / 6);
-    gap: 30px;
-}
+// .regular-customer {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 50px;
+//     font-family: 'Roboto', 'Raleway', sans-serif;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 42px;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: #212121;
+// }
+
+// .cust-vect {
+//     display: flex;
+//     flex-basis: calc((100% - 150px) / 6);
+//     gap: 30px;
+// }
 
 .customer-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 480px) {
-    .customer-list {
-        flex-wrap: wrap;
+.customer-item {
+    border: 1px solid var(--another-grey);
+    border-radius: 4px;
+    fill: var(--another-grey);
+    background-color: var(--white);
+    transition: border var(--transition-duration-function);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--blue);
+        border-radius: 4px;
     }
 }
 
+.customer-item {
+    flex-basis: calc((100% - 30px) / 2);
+    max-width: 210px;
+    height: 92px;
+    
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 60px) / 3);
+        max-width: 226px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 150px) / 6);
+            max-width: 170px;
+        }
+}
+
+
 .customer-link {
-    display: flex;
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     width: 170px;
@@ -52,18 +98,4 @@
     width: 106px;
     height: 60px;
     position: absolute;
-}
-
-.customer-item {
-    border: 1px solid var(--another-grey);
-    border-radius: 4px;
-    fill: var(--another-grey);
-    background-color: var(--white);
-    transition: border var(--transition-duration-function);
-
-    &:hover,
-    &:focus {
-        border: 1px solid var(--blue);
-        border-radius: 4px;
-    }
 }
