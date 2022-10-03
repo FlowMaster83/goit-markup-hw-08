@@ -7,15 +7,14 @@
 
 @import './components/modal-btn.scss';
 @import './components/mobile-menu';
-@import './components/descriptions';
 @import './components/overlays';
-@import './components/captions';
 @import './components/social-list';
-@import './components/icons';
 
+@import './layout/customers';
 @import './layout/logo';
 @import './layout/header';
 @import './layout/hero';
+@import './layout/benefits';
 @import './layout/activities';
 @import './layout/team';
 @import './components/backdrop';

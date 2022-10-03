@@ -1,15 +1,14 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-@media screen and (min-width: 768px) {
-    .section {
+    @media screen and (min-width: 480px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
-}
 
-.benefits-section {
-    align-items: center;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }

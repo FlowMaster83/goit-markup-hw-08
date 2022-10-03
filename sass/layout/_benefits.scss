@@ -1,0 +1,107 @@
+.benefits-caption {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 480px) {
+    .benefits-caption {
+        display: block;
+    }
+}
+
+.ben-vect {
+    display: flex;
+    flex-basis: calc((100% - 90px) / 4);
+    gap: 30px;
+}
+
+.benefits-vectors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.benefits-vectors {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -30px;
+        margin-bottom: -30px;
+    }
+}
+
+.vector-item {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.vector-item {
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    }
+
+    @media screen and (min-width: 1140px) {
+        flex-basis: calc((100% - 3 * 30px) / 3);
+    }
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.item {
+    display: block;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+}
+
+.benefits-points {
+    background-color: var(--background-color);
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.benefits-points:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefits {
+    margin-bottom: 10px;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+@media screen and (min-width: 480px) {
+    .benefits {
+        text-align: center;
+    }
+}
+
+.benefits-description {
+    line-height: 1.71;
+    color: var(--grey);
+}
+
+

@@ -1,3 +1,20 @@
+.team__main-caption {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: inherit;
+}
+
+@media screen and (max-width: 767px) {
+    .team__main-caption {
+        font-size: 28px;
+        line-height: 1.18;
+        margin-bottom: 30px;
+    }
+}
+
 .team {
     background: var(--background-for-section-team)
 }
@@ -64,4 +81,21 @@
     .team__img {
         width: 450px;
     }
+}
+
+.team__item {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.16;
+    text-align: center;
+    color: inherit;
+}
+
+.team__item_position {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--grey);
 }
