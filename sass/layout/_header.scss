@@ -20,11 +20,11 @@
     display: flex;
     align-items: center;
     margin-left: 93px;
-    gap: 50px;
     display: none;
 
     @media screen and (min-width: 768px) {
         display: flex;
+        margin-left: 0;
     }
 }
 
@@ -94,7 +94,7 @@
 }
 
 .header__contactlist {
-display: none;
+    display: none;
     margin-left: auto;
 
     @media screen and (min-width: 768px) {

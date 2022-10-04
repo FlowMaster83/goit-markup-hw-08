@@ -41,6 +41,8 @@
 
 .customer-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -95,7 +97,7 @@
 .each-item {
     display: block;
     fill: var(--another-grey);
-    width: 106px;
+    width: 100%;
     height: 60px;
     position: absolute;
 }
