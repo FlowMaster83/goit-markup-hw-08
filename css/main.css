@@ -1374,6 +1374,7 @@ screen
 }
 
 .background-footer {
+  display: flex;
   text-align: center;
   background-color: #2F303A;
   padding: 60px 0;
@@ -1389,7 +1390,6 @@ screen
   display: block;
   gap: 60px;
 }
-
 @media screen and (min-width: 768px) {
   .all-footer-positions {
     display: flex;
@@ -1397,6 +1397,13 @@ screen
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .all-footer-positions {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 .footer-list {
@@ -1507,16 +1514,16 @@ screen
   display: flex;
   gap: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer-form {
     flex-direction: column;
     align-items: center;
     gap: 12px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .footer-form {
-    flex-direction: column;
+    flex-direction: row;
     gap: 12px;
   }
 }
