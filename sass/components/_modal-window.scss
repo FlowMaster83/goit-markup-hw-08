@@ -11,12 +11,12 @@
     border-radius: 4px;
 
     @media screen and (min-width: 480px) {
-        width: 450px;
+        max-width: 450px;
     }
     
     @media screen and (min-width: 1200px) {
-            max-width: 528px;
-        }
+        max-width: 528px;
+    }
 }
 
 .modal-close-button {
